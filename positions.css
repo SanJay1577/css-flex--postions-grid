@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding:0px ;
+
+}
+
+
+
+.parent{
+    width: 500px; 
+    height: 500px;
+    border: 5px solid black;
+    margin: 10px; 
+   position: relative;
+
+}
+
+
+.child{
+   font-size: larger;
+   margin : 10px;
+   border: 2px solid black;
+   padding: 10px;
+   color: white;
+   width: 50px;
+   
+}
+
+/* relative : it is relative to the parent 
+  LTRB -> px % rel em 
+
+  left  
+  top
+  right 
+  bottom 
+
+*/
+.child-one {
+  background-color: red;
+  position: static;
+
+}
+
+/* absolute, fixed : it is relative to the document 
+if you wanted keep the parenet position as relative 
+  LTRB -> px % rel em 
+
+  left  
+  top
+  right 
+  bottom 
+
+*/
+
+.child-two {
+    background-color: blue;
+    /* position: absolute; */
+    right : 5%;
+    top: 5%;
+}
+
+.child-three {
+    background-color: blueviolet;
+    /* position: fixed; */
+    left : 50%;
+    top:70%; 
+}
+
+.child-four {
+    background-color: orangered;
+}
+
+section{
+    height: 100vh;
+    padding : 10px;
+
+}
+
+.header{
+    background-color: red;
+    color: white; 
+    position: sticky;
+     top: 0;
+     left: 0;
+
+}
+li {
+    display: inline-block;
+    padding: 10px;
+}

@@ -1,0 +1,61 @@
+.main-div{
+    display: grid;
+    margin: 10px;
+    height: 700px;
+    border: 5px solid black;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 50px; */
+    /* place-items: center; */
+}
+
+
+.grid-example{
+    background-color: bisque;
+    padding: 10px;
+    margin:10px; 
+    grid-template-rows: 50px 200px 50px;
+    display: grid;
+
+    grid-template-areas: 
+    "h h h h" 
+    "s main main main" 
+    "footer footer footer footer" ; 
+    
+    /* if you dont' want a separete row 
+    then use below tags */
+
+    /* grid-template : 
+    "h h h h" 50px 
+    "s main main main" 300px 
+    "footer footer footer footer"  50px */
+
+}
+
+
+.header{
+    background-color: rgb(218, 125, 11);
+    grid-area: h;
+}
+
+
+.sidebar{
+    background-color: rgba(49, 28, 145, 0.651);
+    grid-area: s;
+}
+
+.main{
+    background-color: rgb(8, 83, 12);
+    grid-area: main;
+}
+
+.footer{
+    background-color: rgb(231, 71, 71);
+    grid-area: footer;
+}
+
+
+
+.flex-div{
+
+    border:1px solid red;
+}
